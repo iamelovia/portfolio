@@ -1,84 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elovia Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #b57edc, #6a0dad); /* lavender → deep purple */
-      color: white;
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.3em;
-      color: #f3e9ff; /* soft lavender text */
-    }
-    section {
-      padding: 60px 20px;
-    }
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #222;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      background-color: #222;
-      color: white;
-      font-size: 0.9em;
-    }
-    a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Elovia Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* Lavender/Purple Theme Overrides */
+      #header {
+        background: linear-gradient(135deg, #b57edc, #6a0dad);
+      }
+      #header h1, #header nav ul li a {
+        color: white !important;
+      }
+      a {
+        color: #6a0dad;
+      }
+      a:hover {
+        color: #b57edc;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
 
-  <!-- Intro Section -->
-  <header>
-    <h1>Damilola Funso-Adu</h1>
-    <p>Designer & Data Analyst — Creativity Meets Analytics</p>
-  </header>
+    <!-- Header -->
+    <header id="header">
+      <h1>Oluwadamilola Funso-Adu</h1>
+      <nav>
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#designs">Designs</a></li>
+          <li><a href="#dashboards">Dashboards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Designs Placeholder -->
-  <section id="designs">
-    <h2>My Design Works</h2>
-    <p>[Coming soon: gallery of my design projects 🎨]</p>
-  </section>
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+      <div class="content">
+        <header>
+          <h2>Hello, I’m Elovia</h2>
+        </header>
+        <p>Designer & Data Analyst — Where Creativity Meets Analytics.</p>
+        <footer>
+          <a href="#services" class="button style2 down">More</a>
+        </footer>
+      </div>
+    </section>
 
-  <!-- Dashboards Placeholder -->
-  <section id="dashboards">
-    <h2>My Dashboards</h2>
-    <p>[Coming soon: interactive Power BI dashboards 📊]</p>
-  </section>
+    <!-- Services -->
+    <section id="services" class="main style2 right dark fullscreen">
+      <div class="content box style2">
+        <header>
+          <h2>What I Do</h2>
+        </header>
+        <p>I craft compelling brand designs and build interactive dashboards that transform raw data into decisions. My work sits at the intersection of storytelling and strategy.</p>
+      </div>
+      <a href="#about" class="button style2 down anchored">Next</a>
+    </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>Connect with me:
-      <a href="mailto:damilolafunsoadu@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/damilola-funso-adu" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/iamelovia" target="_blank">GitHub</a>
-    </p>
-    <p>&copy; 2025 Elovia Portfolio</p>
-  </footer>
+    <!-- About Me -->
+    <section id="about" class="main style2 left dark fullscreen">
+      <div class="content box style2">
+        <header>
+          <h2>About Me</h2>
+        </header>
+        <p>I’m Oluwadamilola Funso-Adu, also known as Elovia — a creative professional passionate about design, analytics, and empowering growth across business, personal, and spiritual dimensions.</p>
+      </div>
+      <a href="#designs" class="button style2 down anchored">Next</a>
+    </section>
 
-</body>
-</html>
+    <!-- Designs -->
+    <section id="designs" class="main style3 primary">
+      <div class="content">
+        <header>
+          <h2>My Design Works</h2>
+          <p>A collection of my graphics, brand identity projects, and creative experiments.</p>
+        </header>
+
+        <!-- Gallery -->
+        <div class="gallery">
+          <article class="from-left">
+            <a href="images/fulls/sample1.jpg" class="image fit"><img src="images/thumbs/sample1.jpg" title="Project One" alt="Design project 1" /></a>
+          </article>
+          <article class="from-right">
+            <a href="images/fulls/sample2.jpg" class="image fit"><img src="images/thumbs/sample2.jpg" title="Project Two" alt="Design project 2" /></a>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dashboards -->
+    <section id="dashboards" class="main style3 secondary">
+      <div class="content">
+        <header>
+          <h2>My Dashboards<
